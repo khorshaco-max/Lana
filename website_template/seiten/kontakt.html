@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>kontaktformular</title>
+</head>
+<body>
+    <h2>kontakt Form</h2>
+    <h4><p>Bitte fülle das folgende Formular zur Registrierung </p>auf der Website und zur Kontaktaufnahme mit mir aus.</h4>
+    <!--formular-->
+    
+    <form>
+        <label for="vorname">Vorname</label>
+        <input required type="text" id="vorname" placeholder="dein Name"/>
+        <label>Nachname:</label>
+            <input type="text" id="Nachname" placeholder="dein Vorname"/>
+        
+<!--Emailbox and telefonbox--> 
+<!-- پرکردن این بخش الزانی است با ریکوایرد عنوان-->   
+        <label for="email">Email</label>
+        <input required type="email" id="email" placeholder="test@gmail.com"/>
+        </label>
+        <label for="tel">Telefon</label>
+        <input required type="tel" id="tel" placeholder="+4368110113454">
+
+        <label for="nachricht">Nachricht</label>
+        <textarea rows="6" id="nachricht" placeholder="deine Nachricht"></textarea>
+     <!--checkbox datenschutz-->  
+     <div> 
+        <input type="checkbox" id="data-ok" name="Datenschutz">
+        <label for="data-ok">Datenschutz</label>
+    </div id="Datenschutz">
+        <button type="submit">Absenden</button>
+        
+    </form>
+<script src="../index.js"></script>
+<style>
+    body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../gesunde/WhatsApp\ Image\ 2025-11-28\ at\ 08.30.30.jpeg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-color: rgba(255, 255, 255, 0.3); 
+background-blend-mode: overlay;
+
+
+}
+
+
+form{
+    background-color: rgba(109, 106, 111, 0.467);
+    display: flex;flex-direction: column;
+   /* max-width: 60%; نو لازم نداریم فعلاای*/
+    margin: 5%;
+    padding: 3%;
+    border-radius: 20px;
+    width: 30vw;
+    /* vw معیار را در بیلد شیرم بالا می برد معتبر برای نماش است*/
+
+}
+button {
+    width: 100px; 
+    height: 40px;
+     background-color: rgb(88, 86, 90);
+    color: rgb(9, 9, 9);border-radius: 10px;
+    box-shadow: none !important;
+    border: none;
+
+}
+label{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    /* width: 60%; */
+}
+input {
+    margin-bottom: 9px;
+}
+
+ #Datenschutz input{
+    width: auto;
+    
+    
+
+ }
+</style>
+</body>
+</html>

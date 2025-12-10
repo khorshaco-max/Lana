@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Story</title>
+
+  <style>
+    /* اینجا کل CSS را پیست می‌کنی */
+.avatar-text-section {
+  justify-content: center;
+  padding: 3rem 0;
+
+}
+
+.avatar-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 0 auto;   /* 👈 این خط کلیدیه */
+}
+
+
+.avatar {
+  width: 220px;       /* اندازه آواتار */
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%; /* دایره‌ای شدن */
+  filter: grayscale(40%);
+}
+
+    .story-section {
+      position: relative;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: center;
+      background-color: #fafafa;
+      overflow: hidden;
+    }
+
+    .story-section::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: url("../bilder/leaf.png");
+      background-repeat: no-repeat;
+      background-position: center;
+    background-size: contain; /* 👈 کلید رسپانسیو */
+      z-index: 0;
+    }
+.story-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 3px; /* ضخامت قاب */
+  border-radius: 20px;
+
+  background-image: url("../bilder/leaf.png");
+  background-size: cover;
+  background-position: center;
+
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+
+  pointer-events: none;
+}
+
+
+.story-box {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  padding: 3rem;
+  border-radius: 20px;
+  color: #333;
+}
+
+    .story-box p {
+      line-height: 1.7;
+    }
+  </style>
+</head>
+<section class="avatar-text-section">
+
+    <div class="avatar-row">
+        <img src="../bilder/ava1.png" class="avatar">
+        <img src="../bilder/ava2.png" class="avatar">
+        <img src="../bilder/ava3.png" class="avatar">
+    </div>
+<body>
+
+<section class="story-section">
+  <div class="story-box">
+<h3>Mehr Über Meine Geschichte</h3>
+        <p><br>Meine Geschichte
+
+Alles begann im Jahr 2020 – in einer Zeit, in der ich versuchte, Gewicht zu verlieren und mir die Frage stellte:
+„Warum sollten gesunde Desserts nicht auch köstlich sein können?“
+
+<br>Dieser einfache Gedanke wurde zum Ausgangspunkt eines Weges, den ich heute mit Leidenschaft gehe. <br>Ich nahm mir vor, meinen nächsten Kuchen selbst zu backen. Ja – ich dachte monatelang darüber nach, suchte nach Rezepten und lernte bei jedem Schritt etwas Neues dazu.
+
+<br>Zwei Jahre vergingen, zwei Jahre voller Veränderungen. Ich zog zweimal in ein neues Land, musste mich neu orientieren, schwierige Phasen überwinden … und für das Backen blieb kaum Zeit.
+Doch die Begeisterung blieb. Ich dachte weiterhin an Desserts, las Rezepte, experimentierte – und natürlich blieb mir so manche peinliche Situation nicht erspart.
+
+Eine zwei Zentimeter dicke Schokoladenganache? Ja – und die Löffel der Gäste verbogen sich prompt. 
+Kirschkerne in der Creme? Auch ja – eine echte Überraschung für die Zähne! 
+
+<p>Mit jedem Versuch wurde ich besser. Freunde und Gäste warteten bereits gespannt auf das nächste Experiment – und genau diese Vorfreude war meine größte Inspiration.
+
+Bis uns eines Tages Freunde der Familie einluden. Ich fragte mich:
+„Warum backe ich nicht einfach einen Kuchen?“
+Wobei „backen“ relativ war – die Böden kaufte ich ehrlich gesagt im Supermarkt. 
+
+<br>Ich bereitete eine Creme zu, fand ein paar übrig gebliebene Früchte, gab etwas Alkohol hinzu (für den Kuchen, natürlich!) – und voilà:
+Mein erstes kleines Werk. Perfekt für eine Feier, besonders wenn die Gäste schon ein wenig vorgeglüht hatten.</p>
+
+<p>Auch wenn ich keinerlei Erfahrung im Backen hatte, ließ ich mich niemals aufhalten.
+Meine Idee war einfach: Desserts ohne Zucker können genauso köstlich sein.
+Also begann ich zu probieren, zu mischen und eine Verbindung aus Genuss und Leichtigkeit zu schaffen.
+
+Und es hat funktioniert. 🎂</p>
+</div>  </div>
+</section>
+</body>
+</html>
